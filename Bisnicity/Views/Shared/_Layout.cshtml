@@ -1,0 +1,50 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <partial name="_Meta" />
+    <environment include="Development">
+        <partial name="_JS" />
+    </environment>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm  mb-5">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href=@Url.Action("Index1","Home")>
+                <img src="~/images/logo/22.png" alt="" width="60" height="60">
+            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+                <span style="background-color: white;" class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbar4">
+                <ul class="navbar-nav mr-auto pl-lg-4">
+
+                    <li class="nav-item px-lg-2 active" id="navcolor"><a id="navcolor2" class="nav-link" href=@Url.Action("Index1","Home")><span class="d-inline-block d-lg-none icon-width"></span> <i class="fas fa-home"></i></a> </li>
+                    <li class="nav-item px-lg-2" id="navcolor"> <a id="navcolor2" class="nav-link" href=@Url.Action("AboutUs","Home")><span class="d-inline-block d-lg-none icon-width"></span>About</a> </li>
+                    <li class="nav-item px-lg-2" id="navcolor"> <a id="navcolor2" class="nav-link" href=@Url.Action("ITsolution","Home")><span class="d-inline-block d-lg-none icon-width"></span>Solution</a> </li>
+                    <li class="nav-item px-lg-2" id="navcolor"> <a id="navcolor2" class="nav-link" href=@Url.Action("BuntEN","Home")><span class="d-inline-block d-lg-none icon-width"></span>BIT</a> </li>
+                    <li class="nav-item px-lg-2" id="navcolor"> <a id="navcolor2" class="nav-link" href=@Url.Action("BlogsEN","Home")><span class="d-inline-block d-lg-none icon-width"></span>Blogs</a> </li>
+                    <li class="nav-item px-lg-2" id="navcolor"> <a id="navcolor2" class="nav-link" href=@Url.Action("ContactUs","Home")><span class="d-inline-block d-lg-none icon-width"></span>Contact</a> </li>
+                </ul>
+                <div class="d-flex ml-auto">
+                    <form>
+                        <ul class="control" style="float: right;">
+
+                            <li> <a href="#"><span style="color: black;"> عربى </span> <span style="color:#1A9D92 ;">|</span> </a></li>
+
+                            <li><a href="#" style="color: white; background-color: #1A9D92;" class="signbtn">Sign in</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <partial name="_Footer" />
+</body>
+</html>
